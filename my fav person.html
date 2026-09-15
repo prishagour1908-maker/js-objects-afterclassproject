@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+            font-family: cursive;
+            font-size: 30px;
+            background-image: linear-gradient(to right, rgb(251, 165, 179), rgb(255, 163, 129));
+        }
+        .output{
+            border-radius: 10px;
+            border: 2px solid purple;
+            background-image: linear-gradient(to right, rgb(165, 234, 251), rgb(105, 168, 246));
+            }
+    </style>
+</head>
+<body>
+    <h2><marquee><strong>&#10047;&#10048;My Favourite Person Profile!&#10048;&#10047;</strong></marquee></h2>
+    <H4>My favourite person is: ME!</H4>
+    <h3 class="output" id="output"></h3>
+    <script>
+    let profile = {
+       name: "Prisha Gour" ,
+       relationship: "Myself!",
+       hobby: "Coding",
+       city: "Indore",
+    }
+
+    document.getElementById("output").innerHTML = 
+    "Name: " + profile.name + "<hr>" +
+    "Relationship: " + profile.relationship + "<hr>"+
+    "Hobby: " + profile.hobby + "<hr>"+
+    "The city I live in: " + profile.city
+    </script>
+</body>
+</html>
